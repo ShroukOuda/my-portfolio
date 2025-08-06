@@ -1,0 +1,75 @@
+<header 
+  class="fixed top-0 left-0 w-full h-16 z-50"
+  [style.backgroundColor]="'var(--background-color)'"
+  [style.color]="'var(--text-color)'"
+>
+  <div class="w-full h-full px-6 flex items-center justify-between">
+    <!-- Logo -->
+    <h1 class="text-4xl font-bold flex items-center space-x-1 select-none">
+      <span class="relative" [style.color]="'var(--main-color)'">
+        S
+        <span class="absolute text-[0.5rem] text-white -top-1 left-3">a</span>
+      </span>
+      <span [style.color]="'var(--text-color)'">hrouk</span>
+    </h1>
+
+    <!-- Nav Links -->
+    <nav class="w-full" [style.color]="'var(--text-color)'">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Nav links (centered) -->
+        <ul class="flex-1 flex justify-center space-x-10 text-2xl">
+          <li>
+            <a
+              [routerLink]="['/home']"
+              [routerLinkActive]="['underline', 'underline-offset-4']"
+              class="transition"
+              [ngStyle]="{
+                color: isActive('/home') ? 'var(--hover-color)' : 'var(--text-color)'
+              }"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              [routerLink]="['/about']"
+              [routerLinkActive]="['underline', 'underline-offset-4']"
+              class="transition"
+              [ngStyle]="{
+                color: isActive('/about') ? 'var(--hover-color)' : 'var(--text-color)'
+              }"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              [routerLink]="['/projects']"
+              [routerLinkActive]="['underline', 'underline-offset-4']"
+              class="transition"
+              [ngStyle]="{
+                color: isActive('/projects') ? 'var(--hover-color)' : 'var(--text-color)'
+              }"
+            >
+              Projects
+            </a>
+          </li>
+        </ul>
+
+        <!-- Contact Button -->
+        <a
+          [routerLink]="['/contact']"
+          [routerLinkActive]="['bg-[var(--hover-color)]']"
+          class="ml-4 px-4 py-2 rounded-full text-sm md:text-base transition"
+          [style.backgroundColor]="'var(--main-color)'"
+          [style.color]="'var(--button-text-color)'"
+          (mouseover)="hoverContact = true"
+          (mouseleave)="hoverContact = false"
+          [style.backgroundColor]="hoverContact ? 'var(--hover-color)' : 'var(--main-color)'"
+        >
+          Contact
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>

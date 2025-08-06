@@ -1,0 +1,36 @@
+<section id="projects" class="min-h-screen bg-[color:var(--background-color)] text-[color:var(--main-color)] px-4 md:px-16 py-24">
+  <h2 class="text-4xl md:text-6xl font-bold text-center mb-16" style="color: var(--main-color)">Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div
+      *ngFor="let project of projects"
+      class="bg-[color:var(--card-bg)] border rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+      style="border-color: var(--main-color);"
+    >
+      <img
+        [src]="project.image"
+        [alt]="project.title"
+        class="w-full h-48 object-cover"
+      />
+
+      <div class="p-4">
+        <h3 class="text-xl font-bold mb-2" style="color: var(--hover-color)">
+          {{ project.title }}
+        </h3>
+        <p class="text-sm mb-4">
+          {{ project.description }}
+        </p>
+        <a
+          [href]="project.githubLink"
+          target="_blank"
+          class="inline-block underline underline-offset-2 transition"
+          style="color: var(--main-color)"
+          onmouseover="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
+          onmouseout="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"
+        >
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
