@@ -10,14 +10,14 @@
   --card-bg: rgba(145, 114, 156, 0.05);
 } */
 
-:root {
+/* :root {
   --main-color: #48a868;
   --hover-color: #357a52;
   --text-color: #48a868;
   --button-text-color: #ffffff;
   --background-color: #ffffff;
   --card-bg: rgba(72, 168, 104, 0.05);
-}
+} */
 
 /* :root {
       --main-color: #ec407a;
@@ -54,3 +54,13 @@
   --background-color: #1F2937; 
   --card-bg: rgba(255, 255, 255, 0.05); 
 } */
+
+
+:root {
+  --main-color: #4f46e5;
+  --hover-color: #4338CA; 
+  --text-color: #F3F4F6;
+  --button-text-color: #FFFFFF;
+  --background-color: #1F2937; 
+  --card-bg: rgba(255, 255, 255, 0.05); 
+}
