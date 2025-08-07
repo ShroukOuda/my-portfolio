@@ -14,7 +14,22 @@ export class Header {
     constructor(private router: Router) {}
 
   isActive(path: string): boolean {
-    return this.router.url === path;
+    return this.router.url === path ;
   }
   hoverContact = false;
+  menuOpen = false;
+
+
+navLinks = [
+  { path: '/home', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/education', label: 'Education' },
+  { path: '/skills', label: 'Skills' },
+  { path: '/experience', label: 'Experiences' },
+  { path: '/services', label: 'Services' },
+  { path: '/projects', label: 'Projects' },
+];
+
+
+
 }

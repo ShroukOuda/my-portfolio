@@ -1,0 +1,49 @@
+<section
+  id="services"
+  class="min-h-screen bg-[color:var(--background-color)] text-[color:var(--main-color)] px-4 md:px-16 py-24"
+>
+  <h2 class="text-4xl md:text-6xl font-bold text-center mb-16" style="color: var(--main-color)">
+    My Services
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-10">
+    <div
+      *ngFor="let service of services"
+      class="bg-[color:var(--card-bg)] border rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300"
+      style="border-color: var(--main-color);"
+    >
+      <!-- Icon (Font Awesome) -->
+      <div class="flex justify-center mb-4 text-5xl">
+        <i [ngClass]="service.icon" class="text-[color:var(--hover-color)]"></i>
+      </div>
+
+      <!-- Title -->
+      <h3 class="text-2xl font-semibold text-center mb-2" style="color: var(--hover-color)">
+        {{ service.title }}
+      </h3>
+
+      <!-- Description -->
+      <p class="text-sm text-center mb-4">{{ service.description }}</p>
+
+      <!-- Technologies -->
+      <div *ngIf="service.technologiesUsed?.length" class="text-xs text-center text-gray-400 mb-4">
+        <strong>Tech:</strong>
+        {{ service.technologiesUsed?.join(', ') }}
+      </div>
+
+      <!-- Optional link -->
+      <div *ngIf="service.link" class="text-center">
+        <a
+          [href]="service.link"
+          target="_blank"
+          class="text-sm underline transition"
+          style="color: var(--main-color)"
+          onmouseover="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
+          onmouseout="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"
+        >
+          Learn More →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

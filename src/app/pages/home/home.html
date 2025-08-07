@@ -1,28 +1,33 @@
-<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-[color:var(--background-color)] px-4 pt-24 text-[color:var(--main-color)]">
-
+<section
+  id="home"
+  class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24"
+  style="background-color: var(--background-color); color: var(--main-color)"
+>
   <!-- Main Heading -->
-  <h1 class="text-4xl md:text-8xl font-bold mb-4 transition-colors duration-300" style="color: var(--hover-color)">
+  <h1
+    class="text-4xl md:text-8xl font-bold mb-4 transition-colors duration-300"
+    style="color: var(--hover-color)"
+  >
     Hi! I'm <span style="color: var(--hover-color)">Shrouk</span>
   </h1>
 
   <!-- Subheading -->
-  <h2 
-    class="text-4xl md:text-2xl mb-6 transition-colors duration-300 hover:text-[color:var(--hover-color)]"
+  <h2
+    class="text-2xl md:text-3xl mb-6 transition-colors duration-300"
     style="color: var(--main-color)"
   >
     Software Engineer & Backend Developer
   </h2>
 
   <!-- Buttons -->
-  <div class="flex gap-4 mb-12">
-    
-    <!-- Button 1: Let's Talk -->
-    <a 
+  <div class="flex gap-4 mb-12 flex-wrap justify-center">
+    <!-- Let's Talk Button -->
+    <a
       [routerLink]="['/contact']"
-      class="px-8 py-3 rounded-full font-medium transition-all duration-300 hover:-translate-y-0.5"
+      class="px-8 py-3 rounded-full font-medium transition-transform duration-300 hover:-translate-y-1"
       style="
         background-color: var(--main-color);
-        color: white;
+        color: var(--button-text-color);
       "
       onmouseover="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
       onmouseout="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"
@@ -30,10 +35,11 @@
       Let's Talk
     </a>
 
-    <!-- Button 2: Download Resume -->
-    <a 
+    <!-- Download Resume Button -->
+    <a
       href="#"
-      class="px-8 py-3 rounded-full font-medium border-2 transition-all duration-300 hover:-translate-y-0.5"
+      download
+      class="px-8 py-3 rounded-full font-medium border-2 transition-transform duration-300 hover:-translate-y-1"
       style="
         color: var(--main-color);
         border-color: var(--main-color);
@@ -51,7 +57,5 @@
     >
       Download Resume
     </a>
-
   </div>
-
 </section>

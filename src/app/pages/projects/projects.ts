@@ -10,22 +10,22 @@ import { CommonModule } from '@angular/common';
 export class Projects {
   projects: Iprojects[] = [
     {
-      title: 'E-Commerce Website',
-      description: 'A modern online store built using Angular and Tailwind CSS with dynamic product listing and cart management.',
-      image: '/assets/project1.jpg',
-      githubLink: 'https://github.com/yourusername/project1',
+      title: 'GYM Management System',
+      description: 'A comprehensive Flask-based web application for managing gym operations, including member management, trainer scheduling, equipment tracking, and more.',
+      image: 'projects/gym.png',
+      githubLink: 'https://github.com/ShroukOuda/Gym_Management_System',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio showcasing my skills, built with Angular standalone components and Tailwind.',
-      image: '/assets/project2.jpg',
-      githubLink: 'https://github.com/yourusername/portfolio',
+      title: 'Book Store',
+      description: ' RESTful Books Management API built with ASP.NET Core - Complete CRUD operations for books, authors, and categories with Entity Framework Core and AutoMapper integration',
+      image: 'projects/bookstore.png',
+      githubLink: 'https://github.com/ShroukOuda/C.R.U.D',
     },
     {
-      title: 'Blog Platform',
-      description: 'A full-stack blog platform with user authentication, built using Angular for the frontend and Node.js for the backend.',
-      image: '/assets/project3.jpg',
-      githubLink: 'https://github.com/yourusername/blog-platform',  
+      title: 'Git Finder',
+      description: 'GitFinder is a simple web app using HTML, CSS, and JavaScript that lets users search GitHub profiles and view info like username, avatar, followers, following, join date, and public repositories using the GitHub API.',
+      image: 'projects/gitfinder.png',
+      githubLink: 'https://github.com/ShroukOuda/GitFinder',
     },
   ];
 }
