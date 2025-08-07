@@ -28,6 +28,8 @@ navLinks = [
   { path: '/experience', label: 'Experiences' },
   { path: '/services', label: 'Services' },
   { path: '/projects', label: 'Projects' },
+  { path: '/certificates', label: 'Certificates' },
+  { path: '/testimonials', label: 'Testimonials' },
 ];
 
 
