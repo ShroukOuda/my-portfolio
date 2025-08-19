@@ -1,98 +1,203 @@
-<section id="contact" class="min-h-screen bg-[color:var(--background-color)] px-4 md:px-16 py-24 text-[color:var(--main-color)]">
-  <h2 class="text-4xl md:text-6xl font-bold text-center mb-10">Contact Me</h2>
-
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 ml-10">
-    
+<section id="contact" class="min-h-screen pl-16 md-pl-8 pr-8 relative overflow-hidden pt-24 pb-24"
+  style="background-color: var(--background-color); color: var(--text-color)">
   
-    <!-- Contact Form -->
-    <div class="bg-[color:var(--card-bg)] border rounded-xl p-6 md:p-8 shadow-md w-full md:w-[90%] mx-auto" style="border-color: var(--main-color)">
-      <form (submit)="sendEmail($event)" class="text-[color:var(--main-color)]">
+
+  <!-- Enhanced Title Section -->
+  <div class="text-center mb-16 relative z-10">
+    <h2 class="text-5xl md:text-7xl font-black mb-4 relative inline-block"
+        style="color: var(--main-color)">
+      Contact Me
+      <!-- Decorative underline -->
+      <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
+           style="background-color: var(--hover-color)"></div>
+    </h2>
+    <p class="text-lg mt-6 opacity-70 max-w-2xl mx-auto">
+      Let's connect and discuss how we can work together
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+    
+    <!-- Enhanced Contact Form -->
+    <div class="relative group">
+     
+      <div class="relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500"
+           style="border-color: var(--main-color); border-width: 1px;">
         
-        <!-- Name -->
-        <div class="mb-4">
-          <label for="name" class="block mb-2 text-sm font-medium">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="Your Name"
-            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 text-[color:var(--main-color)]"
-            style="
-              background-color: var(--background-color);
-              border-color: var(--main-color);
-              --tw-ring-color: var(--hover-color);
-            "
-          />
+        <!-- Form header -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold mb-2" style="color: var(--main-color)">Send Message</h3>
+          <p class="opacity-70">Fill out the form below and I'll get back to you soon</p>
         </div>
 
+        <form (submit)="sendEmail($event)" class="space-y-6">
+          <!-- Name Field -->
+          <div class="relative">
+            <label for="name" class="block mb-2 text-sm font-semibold" style="color: var(--hover-color)">
+              <i class="fas fa-user mr-2"></i>Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Full Name"
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 hover:border-opacity-80"
+              style="
+                background-color: var(--background-color);
+                border-color: var(--main-color);
+                color: var(--text-color);
+                --tw-ring-color: var(--hover-color);
+                border-width: 2px;
+              "
+            />
+          </div>
+
+          <!-- Email Field -->
+          <div class="relative">
+            <label for="email" class="block mb-2 text-sm font-semibold" style="color: var(--hover-color)">
+              <i class="fas fa-envelope mr-2"></i>Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 hover:border-opacity-80"
+              style="
+                background-color: var(--background-color);
+                border-color: var(--main-color);
+                color: var(--text-color);
+                --tw-ring-color: var(--hover-color);
+                border-width: 2px;
+              "
+            />
+          </div>
+
+          <!-- Subject Field -->
+          <div class="relative">
+            <label for="subject" class="block mb-2 text-sm font-semibold" style="color: var(--hover-color)">
+              <i class="fas fa-tag mr-2"></i>Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What's this about?"
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 hover:border-opacity-80"
+              style="
+                background-color: var(--background-color);
+                border-color: var(--main-color);
+                color: var(--text-color);
+                --tw-ring-color: var(--hover-color);
+                border-width: 2px;
+              "
+            />
+          </div>
+
+          <!-- Message Field -->
+          <div class="relative">
+            <label for="message" class="block mb-2 text-sm font-semibold" style="color: var(--hover-color)">
+              <i class="fas fa-comment mr-2"></i>Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              placeholder="Write your message here..."
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 hover:border-opacity-80 resize-none"
+              style="
+                background-color: var(--background-color);
+                border-color: var(--main-color);
+                color: var(--text-color);
+                --tw-ring-color: var(--hover-color);
+                border-width: 2px;
+              "
+            ></textarea>
+          </div>
+
+          <!-- Enhanced Submit Button -->
+          <div class="pt-4">
+            <button
+              type="submit"
+              class="w-full px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden group"
+              style="
+                background: linear-gradient(135deg, var(--main-color), var(--hover-color));
+                color: var(--button-text-color);
+              "
+            >
+              <!-- Button glow effect -->
+              <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              <div class="relative flex items-center justify-center">
+                <i class="fas fa-paper-plane mr-2"></i>
+                Send Message
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Enhanced Contact Info -->
+    <div class="flex flex-col justify-center space-y-8">
+      <div class="mb-8">
+        <h3 class="text-3xl font-bold mb-4" style="color: var(--main-color)">Get In Touch</h3>
+        <p class="text-lg opacity-80 leading-relaxed">
+          I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology.
+        </p>
+      </div>
+
+      <!-- Contact Items -->
+      <div class="space-y-6">
         <!-- Email -->
-        <div class="mb-4">
-          <label for="email" class="block mb-2 text-sm font-medium">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="your@email.com"
-            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 text-[color:var(--main-color)]"
-            style="
-              background-color: var(--background-color);
-              border-color: var(--main-color);
-              --tw-ring-color: var(--hover-color);
-            "
-          />
+        <div class="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-white/5">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
+               style="background: linear-gradient(135deg, var(--main-color), var(--hover-color));">
+            <i class="fas fa-envelope text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm font-semibold opacity-70 mb-1">Email Address</p>
+            <a href="mailto:shroukouda2@gmail.com" 
+               class="text-xl md:text-2xl font-bold hover:underline transition-colors duration-300"
+               style="color: var(--hover-color)">
+              shroukouda2@gmail.com
+            </a>
+          </div>
         </div>
 
-        <!-- Message -->
-        <div class="mb-4">
-          <label for="message" class="block mb-2 text-sm font-medium">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows="4"
-            placeholder="Write your message..."
-            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 text-[color:var(--main-color)]"
-            style="
-              background-color: var(--background-color);
-              border-color: var(--main-color);
-              --tw-ring-color: var(--hover-color);
-            "
-          ></textarea>
+        <!-- Phone -->
+        <div class="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-white/5">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
+               style="background: linear-gradient(135deg, var(--hover-color), var(--main-color));">
+            <i class="fas fa-phone text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm font-semibold opacity-70 mb-1">Phone Number</p>
+            <a href="tel:+201000000000" 
+               class="text-xl md:text-2xl font-bold hover:underline transition-colors duration-300"
+               style="color: var(--hover-color)">
+              +20 12 86074467
+            </a>
+          </div>
         </div>
 
-        <!-- Submit Button -->
-        <button
-          type="submit"
-          class="px-6 py-2 rounded-md font-semibold transition"
-          style="
-            background-color: var(--main-color);
-            color: var(--button-text-color);
-          "
-          onmouseover="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
-          onmouseout="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-      <!-- Contact Info -->
-    <div class="flex flex-col justify-end space-y-6 md:pl-4">
-      <div class="flex items-center gap-4">
-        <i class="fas fa-envelope text-3xl md:text-4xl text-[color:var(--hover-color)]"></i>
-        <span class="text-xl md:text-2xl">shroukouda2@gmail.com</span>
+        <!-- Location -->
+        <div class="group flex items-center gap-6 p-4 rounded-xl transition-all duration-300 hover:bg-white/5">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
+               style="background: linear-gradient(135deg, var(--main-color), var(--hover-color));">
+            <i class="fas fa-map-marker-alt text-xl text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm font-semibold opacity-70 mb-1">Location</p>
+            <p class="text-xl md:text-2xl font-bold" style="color: var(--hover-color)">
+              Gharbia, Egypt
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="flex items-center gap-4">
-        <i class="fas fa-phone text-3xl md:text-4xl text-[color:var(--hover-color)]"></i>
-        <span class="text-xl md:text-2xl">+20 100 000 0000</span>
-      </div>
-      <div class="flex items-center gap-4">
-        <i class="fas fa-map-marker-alt text-3xl md:text-4xl text-[color:var(--hover-color)]"></i>
-        <span class="text-xl md:text-2xl">Gharbia, Egypt</span>
-      </div>
-    </div>
 
-
+    </div>
   </div>
 </section>

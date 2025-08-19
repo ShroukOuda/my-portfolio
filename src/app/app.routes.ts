@@ -6,9 +6,8 @@ import { Contact } from './pages/contact/contact';
 import { Education } from './pages/education/education';
 import { Services } from './pages/services/services';
 import { Skills } from './pages/skills/skills';
-import { Experience } from './pages/experience/experience';
-import { Testimonials } from './pages/testimonials/testimonials';
-import { Certificates } from './pages/certificates/certificates';
+
+
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,11 +15,8 @@ export const routes: Routes = [
     { path: 'about', component: About },
     { path: 'education', component: Education },
     { path: 'skills', component: Skills },
-    { path: 'experience', component: Experience },
     { path: 'services', component: Services },
     { path: 'projects', component: Projects },
-    { path: 'certificates', component: Certificates },
-    { path: 'testimonials', component: Testimonials },
     { path: 'contact', component: Contact },
 
 ];

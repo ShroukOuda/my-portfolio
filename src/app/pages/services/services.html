@@ -6,13 +6,13 @@
     My Services
   </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
     <div
       *ngFor="let service of services"
-      class="bg-[color:var(--card-bg)] border rounded-2xl p-6 shadow-lg hover:shadow-xl transition duration-300"
+      class="bg-[color:var(--card-bg)] border rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:scale-[1.03] transition-all duration-300"
       style="border-color: var(--main-color);"
     >
-      <!-- Icon (Font Awesome) -->
+      <!-- Icon -->
       <div class="flex justify-center mb-4 text-5xl">
         <i [ngClass]="service.icon" class="text-[color:var(--hover-color)]"></i>
       </div>
@@ -23,12 +23,18 @@
       </h3>
 
       <!-- Description -->
-      <p class="text-sm text-center mb-4">{{ service.description }}</p>
+      <p class="text-sm text-center mb-4 text-[color:var(--text-color)]">
+        {{ service.description }}
+      </p>
 
-      <!-- Technologies -->
-      <div *ngIf="service.technologiesUsed?.length" class="text-xs text-center text-gray-400 mb-4">
-        <strong>Tech:</strong>
-        {{ service.technologiesUsed?.join(', ') }}
+      <!-- Technologies used -->
+      <div *ngIf="service.technologiesUsed?.length" class="flex flex-wrap justify-center gap-2 mb-4">
+        <span
+          *ngFor="let tech of service.technologiesUsed"
+          class="bg-[color:var(--main-color)] text-white text-xs px-2 py-1 rounded-full opacity-90"
+        >
+          {{ tech }}
+        </span>
       </div>
 
       <!-- Optional link -->
@@ -36,7 +42,7 @@
         <a
           [href]="service.link"
           target="_blank"
-          class="text-sm underline transition"
+          class="inline-block text-sm underline font-medium transition"
           style="color: var(--main-color)"
           onmouseover="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
           onmouseout="this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"

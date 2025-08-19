@@ -6,5 +6,6 @@ export interface Ieducation {
     startDate: Date;
     endDate: Date;
     description?: string;
-    grade?: string;
+    gpa?: number;
+    imageUrl?: string;
 }

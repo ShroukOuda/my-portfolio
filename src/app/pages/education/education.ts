@@ -17,18 +17,14 @@ export class Education {
       fieldOfStudy: 'Computer and Informatics',
       startDate: new Date('2022-10-01'),
       endDate: new Date('2026-06-30'),
-      grade: 'Very Good',
+      gpa: 3.4,
       description: 'Focused on software engineering, algorithms, and data structures.',
+      imageUrl: 'education/tanta-university.jpg'
     },
-    {
-      id: 2,
-      institution: 'NTI',
-      degree: 'Summer Training',
-      fieldOfStudy: 'MEAN Stack Development',
-      startDate: new Date('2025-07-13'),
-      endDate: new Date('2025-08-13'),
-      description: 'Completed a full-stack MEAN stack course, including MongoDB, Express.js, Angular, and Node.js.',
-    }
+ 
   ];
 
+  getCurrentDate(): Date {
+    return new Date();
+  }
 }

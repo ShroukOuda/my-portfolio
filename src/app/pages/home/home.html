@@ -1,59 +1,33 @@
 <section
   id="home"
-  class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24"
-  style="background-color: var(--background-color); color: var(--main-color)"
+  class="min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-16 pt-24 bg-[var(--background-color)] text-[var(--main-color)]"
 >
   <!-- Main Heading -->
-  <h1
-    class="text-4xl md:text-8xl font-bold mb-4 transition-colors duration-300"
-    style="color: var(--hover-color)"
-  >
-    Hi! I'm <span style="color: var(--hover-color)">Shrouk</span>
+  <h1 class="text-4xl md:text-7xl lg:text-8xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] via-[var(--hover-color)] to-[var(--main-color)] animate-gradient-x">
+    Hi! I'm <span class="text-[var(--text-color)]">Shrouk</span>
   </h1>
 
-  <!-- Subheading -->
-  <h2
-    class="text-2xl md:text-3xl mb-6 transition-colors duration-300"
-    style="color: var(--main-color)"
-  >
-    Software Engineer & Backend Developer
+  <!-- Typing Subheading with gradient -->
+  <h2 class="text-2xl md:text-3xl mb-8 font-semibold opacity-80 pt-12">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] via-[var(--hover-color)] to-[var(--main-color)]">
+      {{ currentText }}
+    </span>
+    <span class="border-r-2 border-[var(--hover-color)] animate-blink ml-1"></span>
   </h2>
 
   <!-- Buttons -->
-  <div class="flex gap-4 mb-12 flex-wrap justify-center">
-    <!-- Let's Talk Button -->
+  <div class="flex gap-4 flex-wrap justify-center pt-12">
     <a
       [routerLink]="['/contact']"
-      class="px-8 py-3 rounded-full font-medium transition-transform duration-300 hover:-translate-y-1"
-      style="
-        background-color: var(--main-color);
-        color: var(--button-text-color);
-      "
-      onmouseover="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--hover-color')"
-      onmouseout="this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color')"
+      class="px-8 py-3 rounded-full font-medium text-[var(--button-text-color)] bg-[var(--main-color)] shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
     >
       Let's Talk
     </a>
 
-    <!-- Download Resume Button -->
     <a
-      href="#"
+      href="https://drive.google.com/uc?export=download&id=1WxnOT5y3_VuO40f9GPqRs2jKWZDpW4zw"
       download
-      class="px-8 py-3 rounded-full font-medium border-2 transition-transform duration-300 hover:-translate-y-1"
-      style="
-        color: var(--main-color);
-        border-color: var(--main-color);
-      "
-      onmouseover="
-        this.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--hover-color');
-        this.style.color = 'white';
-        this.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--hover-color');
-      "
-      onmouseout="
-        this.style.backgroundColor = 'transparent';
-        this.style.color = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-        this.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-      "
+      class="px-8 py-3 rounded-full font-medium border-2 border-[var(--main-color)] text-[var(--main-color)] transition-all duration-300 hover:bg-gradient-to-r hover:from-[var(--main-color)] hover:to-[var(--hover-color)] hover:text-[var(--button-text-color)] shadow-sm hover:shadow-lg"
     >
       Download Resume
     </a>

@@ -1,6 +1,6 @@
-<div class="grid min-h-screen md:grid-cols-4 gap-6 p-6 text-center bg-[color:var(--background-color)] mt-15">
+<div class="grid min-h-screen grid-cols-2 md:grid-cols-4 gap-6 p-6 text-center bg-[var(--background-color)] mt-15 pb-24 pt-12">
   <div *ngFor="let skill of skills" class="flex flex-col items-center gap-2">
-    <i [class]="skill.icon + ' text-4xl text-[color:var(--main-color)]'"></i>
+    <i [class]="skill.icon + ' text-4xl text-[var(--main-color)]'"></i>
     <span class="text-sm text-white">{{ skill.name }}</span>
   </div>
 </div>
