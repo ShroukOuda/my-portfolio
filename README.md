@@ -32,8 +32,6 @@ A sleek, modern portfolio website showcasing my expertise as a **Backend Develop
 - **Deployment**: GitHub Pages
 
 ### Key Technologies
-- **Zone.js**: Change detection and async operations
-- **RxJS**: Reactive programming patterns
 - **Angular Router**: Client-side navigation
 - **Component Architecture**: Standalone components pattern
 - **CSS Animations**: Keyframe animations & transitions
