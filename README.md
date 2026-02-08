@@ -1,6 +1,6 @@
 # 👩‍💻 Shrouk Ouda | Backend Engineer Portfolio
 
-A sleek, modern portfolio website showcasing my expertise as a **Backend Engineer** and **Software Developer**. Built with **Angular 18** 
+A sleek, modern portfolio website showcasing my expertise as a **Backend Developer** and **Software Engineer**. Built with **Angular 18** 
 
 🌐 **Live Demo:** [shroukouda.github.io/my-portfolio/](https://shroukouda.github.io/my-portfolio/)
 
