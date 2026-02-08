@@ -28,7 +28,6 @@ A sleek, modern portfolio website showcasing my expertise as a **Backend Develop
 ### Development & Build
 - **Build Tool**: Angular CLI & Vite
 - **Package Manager**: npm
-- **Testing**: Jasmine & Karma
 - **Version Control**: Git
 - **Deployment**: GitHub Pages
 
