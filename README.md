@@ -1,59 +1,222 @@
-# MyPortfolio
+# 👩‍💻 Shrouk Ouda | Backend Engineer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+A sleek, modern portfolio website showcasing my expertise as a **Backend Engineer** and **Software Developer**. Built with **Angular 18** and featuring an interactive terminal interface with dynamic grayscale theming.
 
-## Development server
+🌐 **Live Demo:** [shroukouda.github.io/my-portfolio/](https://shroukouda.github.io/my-portfolio/)
 
-To start a local development server, run:
+---
 
+
+### 📋 Portfolio Sections
+- **Home**: Hero section with animated greeting and typewriter effect
+- **About**: Personal introduction and background information
+- **Skills**: Comprehensive showcase of technical competencies with visual grid
+- **Projects**: Portfolio of featured work with descriptions and live demos
+- **Contact**: Contact form and social media links
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: Angular 18
+- **Language**: TypeScript 5.5+
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide Angular / Font Awesome
+- **Reactive Forms**: Angular Reactive Forms
+
+### Development & Build
+- **Build Tool**: Angular CLI & Vite
+- **Package Manager**: npm
+- **Testing**: Jasmine & Karma
+- **Version Control**: Git
+- **Deployment**: GitHub Pages
+
+### Key Technologies
+- **Zone.js**: Change detection and async operations
+- **RxJS**: Reactive programming patterns
+- **Angular Router**: Client-side navigation
+- **Component Architecture**: Standalone components pattern
+- **CSS Animations**: Keyframe animations & transitions
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 ```bash
-ng serve
+Node.js (v18 or higher)
+npm (v9 or higher)
+Angular CLI (v18+)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+Install Angular CLI globally:
 ```bash
-ng generate component component-name
+npm install -g @angular/cli
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installation & Setup
 
+1. **Clone the repository**:
 ```bash
-ng generate --help
+   git clone https://github.com/ShroukOuda/my-portfolio.git
+   cd my-portfolio
 ```
 
-## Building
-
-To build the project run:
-
+2. **Install dependencies**:
 ```bash
-ng build
+   npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+3. **Start the development server**:
 ```bash
-ng test
+   ng serve
+```
+   
+   Or using npm:
+```bash
+   npm start
 ```
 
-## Running end-to-end tests
+4. **Open your browser**:
+   Navigate to `http://localhost:4200/`
+   
+   The app will automatically reload when you modify source files.
 
-For end-to-end (e2e) testing, run:
-
+### Build for Production
 ```bash
-ng e2e
+ng build --configuration production
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Build artifacts will be stored in the `dist/` directory.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📂 Project Structure
+```
+my-portfolio/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── header/                 # Navigation header
+│   │   │   └── social-links/           # Social media links
+│   │   ├── pages/
+│   │   │   ├── home/                   # Hero section with terminal
+│   │   │   ├── about/                  # About me section
+│   │   │   ├── skills/                 # Skills showcase
+│   │   │   ├── projects/               # Projects portfolio
+│   │   │   └── contact/                # Contact form
+│   │   ├── models/
+│   │   │   ├── iprojects.ts            # Project interface
+│   │   │   └── iskills.ts              # Skills interface
+│   │   ├── app.config.ts               # App configuration
+│   │   ├── app.routes.ts               # Routing configuration
+│   │   ├── app.ts                      # Root component
+│   │   └── styles.css                  # Global styles
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   ├── index.html                      # Main HTML file
+│   ├── main.ts                         # Application entry point
+│   └── styles.css                      # Global stylesheet
+├── public/
+│   ├── projects/                       # Project screenshots
+│   ├── education/                      # Education images
+│   └── favicon.ico
+├── node_modules/                       # Dependencies
+├── angular.json                        # Angular configuration
+├── package.json                        # Project dependencies
+├── tsconfig.json                       # TypeScript configuration
+├── tailwind.config.js                  # Tailwind CSS configuration
+└── README.md
+```
+
+---
+
+
+## 🧩 Key Components
+
+### Home Component (`src/app/pages/home/`)
+- **Hero Section**: Large heading with gradient animation
+- **Terminal Display**: Side-by-side layout with cycling terminal
+- **Typewriter Effect**: Dynamic role animation
+- **Call-to-Action**: "Let's Talk" and "Download Resume" buttons
+- **Social Links**: GitHub, LinkedIn, Email with hover effects
+
+### Header Component (`src/app/components/header/`)
+- **Responsive Navigation**: Mobile-friendly menu
+- **Active Link Highlighting**: Visual feedback for current page
+- **Smooth Scrolling**: Animated transitions between sections
+- **Theme Switcher**: Toggle between color schemes
+
+### Skills Component (`src/app/pages/skills/`)
+- **Technology Grid**: Categorized skill display
+- **Icon Integration**: Visual representation of technologies
+- **Responsive Layout**: Adapts to all screen sizes
+- **Skill Categories**: Backend, Frontend, Database, DevOps
+
+### Projects Component (`src/app/pages/projects/`)
+- **Project Cards**: Visual showcase with images
+- **Technology Tags**: Stack used for each project
+- **Live Demo Links**: Direct links to deployed projects
+- **Source Code Links**: GitHub repository access
+
+### Contact Component (`src/app/pages/contact/`)
+- **Contact Form**: Reactive form with validation
+- **Direct Links**: Email and social media
+- **Location Info**: Geographic information
+- **Response Handling**: Form submission feedback
+
+---
+
+## 📈 Deployment
+
+### GitHub Pages Deployment
+
+1. **Build the project**:
+```bash
+   ng build --configuration production --base-href /my-portfolio/
+```
+
+2. **Deploy to GitHub Pages**:
+```bash
+   npx angular-cli-ghpages --dir=dist/my-portfolio/browser
+```
+
+### Automatic Deployment
+Configure GitHub Actions for automatic deployment on push to main branch.
+
+---
+
+## 🔧 Configuration
+
+### Theme Customization
+Modify color variables in your CSS files to customize the theme.
+
+### Routes Configuration
+Update routes in `src/app/app.routes.ts`:
+```typescript
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  // Add more routes
+];
+```
+
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+
+⭐ **If you found this project interesting or useful, please consider giving it a star!** 
+
+It helps others discover my work and motivates me to create more awesome projects.
+
+---
+
+**Made with 💻 by Shrouk Ouda | Backend Engineer**
