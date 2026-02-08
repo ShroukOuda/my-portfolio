@@ -89,9 +89,13 @@ export class Skills {
     id: 16,
     name: "Linux",
     icon: "fa-brands fa-linux"
+  },
+  {
+    id: 17,
+    name: "Docker",
+    icon: "fa-brands fa-docker"
   }
 
 ];
-
 
 }

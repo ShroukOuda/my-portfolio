@@ -24,9 +24,9 @@ export class SocialLinks {
       url: 'https://linkedin.com/in/shrouk18ouda'
     },
     {
-      name: 'twitter',
-      icon: 'fab fa-twitter',
-      url: 'https://twitter.com/shroukouda2'
+      name: 'docker',
+      icon: 'fab fa-docker',
+      url: 'https://hub.docker.com/u/shroukouda'
     }
   ];
 

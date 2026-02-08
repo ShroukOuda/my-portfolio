@@ -1,183 +1,30 @@
 @import "tailwindcss";
 
- 
+/* 1st pallet */
 /* :root {
-  --main-color: #91729c;
-  --hover-color: #432161;
-  --text-color: #91729c;
-  --button-text-color: #ffffff;
-  --background-color: #ffffff;
-  --card-bg: rgba(145, 114, 156, 0.05);
-}  */
-
-/* :root {
-  --main-color: #48a868;
-  --hover-color: #357a52;
-  --text-color: #48a868;
-  --button-text-color: #ffffff;
-  --background-color: #ffffff;
-  --card-bg: rgba(72, 168, 104, 0.05);
+   --main-color: #7F5D96;          
+  --hover-color: #674177;         
+  --text-color: #f0eaf5;          
+  --button-text-color: #f0eaf5;    
+  --background-color: #080809;     
+  --card-bg: #2B142E; 
 } */
 
 /* :root {
-      --main-color: #ec407a;
-  --hover-color: #c2185b;
-  --text-color: #ec407a;
-  --button-text-color: #ffffff;
-  --background-color: #ffffff;
-  --card-bg: rgba(236, 64, 122, 0.05);
-}  */
-
-/* :root {
-     --main-color: #7e57c2;
-  --hover-color: #512da8;
-  --text-color: #7e57c2;
-  --button-text-color: #ffffff;
-  --background-color: #ffffff;
-  --card-bg: rgba(126, 87, 194, 0.05);
+    --main-color: #5E5E62;       
+  --hover-color: #2F2D32;        
+  --text-color: #E0DFE1;          
+  --button-text-color: #E0DFE1;   
+  --background-color: #0F0E10;    
+  --card-bg: #1C1B1E;   
 }  */
 
 :root {
-  --main-color: #9575cd;
-  --hover-color: #7e57c2;
-  --text-color: #ede7f6;
-  --button-text-color: #11091a;
-  --background-color: #11091a;
-  --card-bg: rgba(149, 117, 205, 0.1);
+   --main-color: #99477b;          /* Pink accent */
+  --hover-color: #b0437d;         /* Lighter pink */
+  --text-color: #ECF0F1;          /* Light gray text */
+  --button-text-color: #2C3E50;   /* Dark text for pink buttons */
+  --background-color: #1A1A1A;    /* Dark background */
+  --card-bg: #2C2C2C;  
 }
 
-/* :root {
-  --main-color: #4f46e5;
-  --hover-color: #4338CA; 
-  --text-color: #F3F4F6;
-  --button-text-color: #FFFFFF;
-  --background-color: #1F2937; 
-  --card-bg: rgba(255, 255, 255, 0.05); 
-} */
-
-
-/* :root {
-  --main-color: #8B5A9F;
-  --hover-color: #5D3A6B;
-  --text-color: #6B4C72;
-  --button-text-color: #ffffff;
-  --background-color: #FAF8F4;
-  --card-bg: rgba(139, 90, 159, 0.08);
-  --accent-pink: #C595A6;
-  --accent-mauve: #B8869B;
-  --dark-section-bg: #3A2B3E;
-} */
- /* :root {
-  --main-color: #D4A574;
-  --hover-color: #B8935F;
-  --text-color: #E5E5E5;
-  --button-text-color: #1A1A1A;
-  --background-color: #0D0D0D;
-  --card-bg: rgba(212, 165, 116, 0.1);
-  --accent-copper: #C89666;
-  --accent-rose-gold: #E6B887;
-  --dark-surface: #1A1A1A;
-  --darker-surface: #0A0A0A;
-} */
-
-/* :root {
-  --main-color: #0891b2;
-  --hover-color: #0e7490;
-  --text-color: #164e63;
-  --button-text-color: #ffffff;
-  --background-color: #f0fdff;
-  --card-bg: rgba(8, 145, 178, 0.05);
-} */
-
-/* :root {
-  --main-color: #f59e0b;
-  --hover-color: #d97706;
-  --text-color: #f3f4f6;
-  --button-text-color: #111827;
-  --background-color: #1f2937;
-  --card-bg: rgba(245, 158, 11, 0.1);
-} */
-
-/* :root {
-  --main-color: #059669;
-  --hover-color: #047857;
-  --text-color: #064e3b;
-  --button-text-color: #ffffff;
-  --background-color: #f0fdf4;
-  --card-bg: rgba(5, 150, 105, 0.05);
-} */
-
-/* :root {
-  --main-color: #3b82f6;
-  --hover-color: #2563eb;
-  --text-color: #e2e8f0;
-  --button-text-color: #ffffff;
-  --background-color: #0f172a;
-  --card-bg: rgba(59, 130, 246, 0.1);
-} */
-
-/* :root {
-  --main-color: #a855f7;
-  --hover-color: #9333ea;
-  --text-color: #6b21a8;
-  --button-text-color: #ffffff;
-  --background-color: #faf5ff;
-  --card-bg: rgba(168, 85, 247, 0.05);
-}  */
-
-/* :root {
-  --main-color: #10b981;
-  --hover-color: #059669;
-  --text-color: #065f46;
-  --button-text-color: #ffffff;
-  --background-color: #ecfdf5;
-  --card-bg: rgba(16, 185, 129, 0.05);
-} */
-
-/* :root {
-  --main-color: #06b6d4;
-  --hover-color: #0891b2;
-  --text-color: #164e63;
-  --button-text-color: #ffffff;
-  --background-color: #f0fdff;
-  --card-bg: rgba(6, 182, 212, 0.05);
-} */
-
-/* :root {
-  --main-color: #a3724a;
-  --hover-color: #8b5a3c;
-  --text-color: #451a03;
-  --button-text-color: #ffffff;
-  --background-color: #fefcfb;
-  --card-bg: rgba(163, 114, 74, 0.05);
-} */
-
-/* :root {
-  --main-color: #475569;
-  --hover-color: #334155;
-  --text-color: #0f172a;
-  --button-text-color: #ffffff;
-  --background-color: #f8fafc;
-  --card-bg: rgba(71, 85, 105, 0.05);
-} */
-
-/* :root {
-  --main-color: #8b5cf6;
-  --hover-color: #7c3aed;
-  --text-color: #c4b5fd;
-  --button-text-color: #ffffff;
-  --background-color: #0c0a15;
-  --card-bg: rgba(139, 92, 246, 0.1);
-} */
-
-/* :root {
-  --main-color: #6366f1;
-  --hover-color: #4f46e5;
-  --text-color: #1e293b;
-  --button-text-color: #ffffff;
-  --background-color: #ffffff;
-  --card-bg: rgba(99, 102, 241, 0.05);
-  --secondary-bg: #f8fafc;
-  --border-color: rgba(99, 102, 241, 0.15);
-  --subtle-text: #64748b;
-} */

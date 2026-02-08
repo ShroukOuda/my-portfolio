@@ -1,15 +1,18 @@
 <section
   id="about"
-  class="min-h-screen px-10 md:px-16 py-24 md:py-32 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
+  class="min-h-screen px-10 md:px-20 py-24 md:py-32 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
   style="background-color: var(--background-color); color: var(--text-color)"
 >
   <!-- Left Side: Text -->
   <div class="w-full ml-10 md:w-1/2 text-left">
-    <h2
-      class="text-4xl md:text-6xl font-bold mb-4"
-      style="color: var(--main-color)"
-    >
+     <h2 class="text-5xl md:text-7xl font-black mb-8 relative inline-block"
+        style="color: var(--main-color)">
       About Me
+      <!-- Underline decoration -->
+      <div 
+      class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full"
+      style="background-color: var(--hover-color)">
+      </div>
     </h2>
     <p class="text-xl md:text-2xl mb-6">
       I'm a passionate <span style="color: var(--hover-color)">.NET Developer</span> with a love for creating dynamic and responsive web applications.
@@ -28,14 +31,15 @@
         background-image: linear-gradient(135deg, var(--main-color) 1px, transparent 1px);
         background-size: 20px 20px;
       "
-    ></div>
+    >
+    </div>
 
     <!-- Image -->
     <img
       src="about1.jpeg"
       alt="About Me"
       class="w-110 h-80 object-cover rounded-[30%_20%_30%_50%/30%_50%_30%_20%] shadow-3xl"
-      style="box-shadow: 0 10px 20px rgba(149, 117, 205, 0.4);"
+      style="box-shadow: 0 10px 20px var(--main-color);"
     />
   </div>
 </section>

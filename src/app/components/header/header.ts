@@ -23,11 +23,8 @@ export class Header {
 navLinks = [
   { path: '/home', label: 'Home' },
   { path: '/about', label: 'About' },
-  { path: '/education', label: 'Education' },
   { path: '/skills', label: 'Skills' },
-  { path: '/services', label: 'Services' },
   { path: '/projects', label: 'Projects' },
-
 
 ];
 

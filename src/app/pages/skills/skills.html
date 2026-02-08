@@ -1,6 +1,28 @@
-<div class="grid min-h-screen grid-cols-2 md:grid-cols-4 gap-6 p-6 text-center bg-[var(--background-color)] mt-15 pb-24 pt-12">
-  <div *ngFor="let skill of skills" class="flex flex-col items-center gap-2">
-    <i [class]="skill.icon + ' text-4xl text-[var(--main-color)]'"></i>
-    <span class="text-sm text-white">{{ skill.name }}</span>
+
+<section
+  class="min-h-screen bg-[color:var(--background-color)] text-[color:var(--main-color)] px-4 md:px-16 py-24"
+>
+  <div class="text-center mb-0 relative">
+    <h2 class="text-5xl md:text-7xl font-black mb-4 relative inline-block"
+        style="color: var(--main-color)">
+      Skills
+      <!-- Underline decoration -->
+      <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 rounded-full"
+           style="background-color: var(--hover-color)"></div>
+    </h2>
+    <p class="text-lg mt-6 opacity-70 max-w-2xl mx-auto">
+      Technologies and tools I use to build amazing digital experiences
+    </p>
   </div>
-</div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 text-center mt-8">  
+      @for (skill of skills; track skill.name)
+      {
+        <div class="flex flex-col items-center gap-6">
+          <i [class]="skill.icon + ' text-4xl text-[var(--main-color)]'"></i>
+          <span class="text-sm text-white">{{ skill.name }}</span>
+        </div>
+      }  
+  </div>
+
+</section>
+
