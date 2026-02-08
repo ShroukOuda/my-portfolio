@@ -210,13 +210,5 @@ export const routes: Routes = [
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
-
-
-⭐ **If you found this project interesting or useful, please consider giving it a star!** 
-
-It helps others discover my work and motivates me to create more awesome projects.
-
----
 
 **Made with 💻 by Shrouk Ouda | Backend Engineer**
