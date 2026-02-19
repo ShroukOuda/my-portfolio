@@ -22,24 +22,48 @@
     </p>
   </div>
 
-  <!-- Right Side: Image with Decorative Lines -->
+  <!-- Right Side: Image OR Terminal with Decorative Lines -->
   <div class="relative w-full md:w-1/2 flex justify-center items-center">
     <!-- Decorative background lines -->
     <div
-      class="absolute inset-0 opacity-10 rounded-lg"
+      class="absolute inset-0 rounded-lg opacity-10 pointer-events-none"
       style="
         background-image: linear-gradient(135deg, var(--main-color) 1px, transparent 1px);
         background-size: 20px 20px;
       "
-    >
-    </div>
+    ></div>
 
-    <!-- Image -->
+    <!-- Option 1: Image -->
+    <!--
     <img
       src="about1.jpeg"
       alt="About Me"
-      class="w-110 h-80 object-cover rounded-[30%_20%_30%_50%/30%_50%_30%_20%] shadow-3xl"
+      class="w-80 h-80 object-cover rounded-[30%_20%_30%_50%/30%_50%_30%_20%] shadow-3xl"
       style="box-shadow: 0 10px 20px var(--main-color);"
     />
+    -->
+
+    <!-- Option 2: Terminal -->
+    <section
+      aria-label="About terminal"
+      class="relative max-w-md w-full rounded-xl bg-[var(--background-color)] shadow-lg border border-[var(--card-bg)] z-10"
+    >
+      <!-- Terminal Header -->
+      <div class="flex items-center gap-2 px-4 py-2 border-b border-[var(--card-bg)]">
+        <span class="w-3 h-3 rounded-full bg-[#FF5F56]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#FFBD2E]"></span>
+        <span class="w-3 h-3 rounded-full bg-[#27C93F]"></span>
+        <span class="ml-3 text-sm text-gray-400 font-mono">shrouk@portfolio: ~</span>
+      </div>
+
+      <!-- Terminal Body -->
+      <div class="px-4 py-4 text-sm font-mono leading-relaxed min-h-[200px]">
+        <div #terminalContent></div>
+        <span #cursor class="inline-block w-2 h-4 bg-[var(--main-color)] ml-1 animate-blink"></span>
+      </div>
+    </section>
+
+
   </div>
+
 </section>

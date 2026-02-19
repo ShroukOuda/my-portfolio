@@ -14,10 +14,10 @@
       Technologies and tools I use to build amazing digital experiences
     </p>
   </div>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 text-center mt-8">  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 p-8 text-center mt-12">  
       @for (skill of skills; track skill.name)
       {
-        <div class="flex flex-col items-center gap-6">
+        <div class="flex flex-col items-center gap-10">
           <i [class]="skill.icon + ' text-4xl text-[var(--main-color)]'"></i>
           <span class="text-sm text-white">{{ skill.name }}</span>
         </div>
